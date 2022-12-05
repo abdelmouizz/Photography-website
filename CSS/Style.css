@@ -1,0 +1,342 @@
+html {
+    scroll-behavior: smooth;
+  }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+.container{
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+nav{
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    padding:0;
+}
+
+.navcontain{
+    margin-top: 20px;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    margin-left: 20px ;
+  }
+/* ZON PHOTOGRAPHY */
+.name{
+    display: flex;
+    color: #ffffff;
+    transition: 0.4s;
+    font-size: 35px;
+    font-family: 'Pacifico', cursive;
+}
+/* NAV MENU LIST */
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    background-color: transparent;       
+}
+.menu > a {
+    color: white;
+    background-color: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.4s;  
+    text-decoration: none;
+}
+
+
+ .menu a:hover{
+    color:#003566;
+}
+@media only screen and (max-width: 768px){
+    .name{
+        font-size: 10px;
+    }
+    .menu{
+        gap: 20px;
+    }
+    .menu > a{
+        font-size: 10px;
+    }
+    #contactus{
+        font-size: 16px;
+    }
+}
+/* Slide Show Container */
+.slider{
+    position: relative;
+    background-color: #003566;
+}
+/* Hide the images by default*/
+.myslider{
+    display: none;
+}
+
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 0.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: 0.7}
+    to {opacity: 1}
+  }
+
+
+
+/*PACKAGES CONTAINER WITH ITS IMAGES*/
+.packcontainer{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    display: block;
+ width: 25%;
+ float: left;
+ margin-left: 15%;
+ margin-top: 30px;
+ 
+}
+.h2p{
+    color: rgb(78, 78, 78);
+    font-family: 'Raleway', sans-serif;
+    text-align: start;
+    font-weight: bolder;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.h3p{
+    padding: 10px;
+    color: rgb(78, 78, 78);
+    font-family: 'Raleway', sans-serif;
+    text-align: start;
+    font-weight: bold;
+    font-size: 18;
+    margin-bottom: 8px;
+    padding: 0;
+
+}
+.p1{
+    color: rgb(105, 105, 105);
+    font-family: 'Raleway', sans-serif;
+    text-align: start;
+    font-weight: 100;
+    font-size: 13px;
+    margin-bottom: 15px;
+    
+
+}
+/*Left IMAGE*/
+.imgcont{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    display: block;
+    width: 50%;
+    float: right;
+    margin-bottom: 10px;
+}
+.imgpack{
+    float: right;
+    width: 100%;
+    height:1080px;
+}
+/*GALLERY PHOTOS*/
+.grid-container3 {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    display: grid;
+    width: 100%;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    column-gap: 8px;
+   
+}
+.grid-container3 > img{
+    opacity: 0.9;
+}
+.grid-container3 > img:hover{
+    opacity: 1;
+}
+
+.grid-container1 > img{
+    margin: 0;
+    outline: 0;
+    display: block;
+    padding: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    opacity: 0.9;
+}
+.grid-container1 > img:hover{
+    opacity: 1;
+}
+
+
+.grid-container4{
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    padding-top: 0;
+    width: 100%;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto;
+    gap: 8px;
+    display: grid;
+    margin-bottom: 10px;
+
+}
+.grid-container4 > img{
+    opacity: 0.9;
+}
+.grid-container4 > img:hover{
+    opacity: 1;
+}
+
+
+
+/*ABOUT US*/ 
+.abtus{
+    margin: 0;
+    padding: 20px;
+    outline: 0;
+    width: 50%;
+    height: auto;
+    float: right;
+}
+.abtus > div{
+    color: rgb(78, 78, 78);
+    font-family: 'Raleway', sans-serif;
+    text-align: Center;
+    font-weight: bolder;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.abtus > p{
+    color: rgb(105, 105, 105);
+    font-family: 'Raleway', sans-serif;
+    text-align: start;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+/*RUGHT IMG TO ABT US */
+.rightimg{
+    margin: 0;
+    padding:0;
+    outline: 0;
+    width: 50%;
+    height: auto;
+    float: left;
+}
+
+.contactcontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    height: auto;
+    background-color: #003566;
+}
+
+.contactcontainer> h3{
+    color: aliceblue;
+    font-size: 40px;
+    font-family: 'Raleway', sans-serif;
+    padding: 20px;
+    font-weight: 20;
+}
+
+.contactcontainer> p{
+    color: rgb(226, 229, 231);
+    font-weight: 100;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+@media only screen and (max-width: 768px){
+    .contactcontainer> p{
+        font-size: 10px;
+    }
+}
+input{
+    margin-top: 10px;
+    height: 35px;
+    width: 350px;
+    border: none;
+    padding: 10px;
+    background-color:aliceblue;
+}
+
+textarea{
+    margin-top: 10px;
+    height: auto;
+    width: 350px;
+    border: none;
+    padding: 10px;
+    background-color:aliceblue;
+    resize: vertical;
+}
+.button{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Send{
+    margin-bottom: 20px;
+    border: none;
+    width: 150px;
+    height: 60px;
+    background-color: #000203;
+    color: aliceblue;
+    font-size: 18px;
+}
+.Send:hover{
+    background-color: #0862b8;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    background-color: aliceblue;
+    text-align: center;
+}
+
+.footer > p{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
