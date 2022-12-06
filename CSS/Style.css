@@ -272,18 +272,18 @@ nav{
 }
 @media only screen and (max-width: 768px){
     .contactcontainer> p{
-        font-size: 10px;
+        font-size: 15px;
     }
 }
+
 input{
     margin-top: 10px;
     height: 35px;
     width: 350px;
     border: none;
     padding: 10px;
-    background-color:aliceblue;
+    background-color:aliceblue;  
 }
-
 textarea{
     margin-top: 10px;
     height: auto;
@@ -295,8 +295,8 @@ textarea{
 }
 .button{
     display: flex;
-  justify-content: center;
-  align-items: center;
+    justify-content: center;
+    align-items: center;
 }
 .Send{
     margin-bottom: 20px;
@@ -306,11 +306,11 @@ textarea{
     background-color: #000203;
     color: aliceblue;
     font-size: 18px;
+    cursor: pointer;
 }
 .Send:hover{
     background-color: #0862b8;
 }
-
 footer{
     display: flex;
     justify-content: center;
