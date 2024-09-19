@@ -18,7 +18,7 @@
   
 ### Screenshot : 
 
-![](./Screenshot/Screenshot.png)
+![](./Screenshot/Screenshoot.png)
 
 ### The challenge :
 - To make website for a photographer to promote his business
